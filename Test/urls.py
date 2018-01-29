@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from . import views
+from Django.views.generic.base import RedirectView
 urlpatterns = [
     url(r'^$', views.hello),
     url(r'^favicon.ico$',RedirectView.as_view(url=r'static/favicon.ico')),
