@@ -19,4 +19,5 @@ from django.conf.urls import url
 from . import views
 urlpatterns = [
     url(r'^$', views.hello),
+    url(r'^favicon.ico$',RedirectView.as_view(url=r'static/favicon.ico')),
 ]
